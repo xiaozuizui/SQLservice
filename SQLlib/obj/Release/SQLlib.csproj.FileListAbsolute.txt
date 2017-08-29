@@ -1,0 +1,8 @@
+G:\android-service\SQLlib\SQLlib\bin\Release\SQLlib.dll.config
+G:\android-service\SQLlib\SQLlib\bin\Release\SQLlib.dll
+G:\android-service\SQLlib\SQLlib\bin\Release\SQLlib.pdb
+G:\android-service\SQLlib\SQLlib\bin\Release\MySql.Data.dll
+G:\android-service\SQLlib\SQLlib\bin\Release\Newtonsoft.Json.dll
+G:\android-service\SQLlib\SQLlib\bin\Release\Newtonsoft.Json.xml
+G:\android-service\SQLlib\SQLlib\obj\Release\SQLlib.dll
+G:\android-service\SQLlib\SQLlib\obj\Release\SQLlib.pdb
