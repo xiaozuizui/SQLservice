@@ -1,0 +1,11 @@
+G:\android-service\SQLlib\test\bin\Debug\test.exe.config
+G:\android-service\SQLlib\test\obj\Debug\test.csprojResolveAssemblyReference.cache
+G:\android-service\SQLlib\test\bin\Debug\test.exe
+G:\android-service\SQLlib\test\bin\Debug\test.pdb
+G:\android-service\SQLlib\test\bin\Debug\Newtonsoft.Json.dll
+G:\android-service\SQLlib\test\bin\Debug\SQLlib.dll
+G:\android-service\SQLlib\test\bin\Debug\MySql.Data.dll
+G:\android-service\SQLlib\test\bin\Debug\SQLlib.pdb
+G:\android-service\SQLlib\test\bin\Debug\Newtonsoft.Json.xml
+G:\android-service\SQLlib\test\obj\Debug\test.exe
+G:\android-service\SQLlib\test\obj\Debug\test.pdb
