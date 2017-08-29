@@ -280,7 +280,10 @@ namespace SQLlib.SQLhelp
         //待定
         public void GetGuestInfoByTip()
         {
+
             List<Student> returnList = new List<Student>();
+            
+            //testcontent
 
             string Query_str = "SELECT grade,majoy,qqnumber,tel,label FROM student WHERE label =";
         }
