@@ -4,16 +4,16 @@
 winexe
 C#
 .cs
-G:\android-service\SQLlib\serviceFram\obj\Release\
+G:\servicehub\SQLservice\serviceFram\obj\Release\
 serviceFram
 none
 false
 TRACE
-G:\android-service\SQLlib\serviceFram\App.xaml
+G:\servicehub\SQLservice\serviceFram\App.xaml
 11151548125
 
 9111207142
-15642106838
+15-154629003
 MainWindow.xaml;
 
 True

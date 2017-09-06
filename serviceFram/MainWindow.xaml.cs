@@ -27,7 +27,7 @@ namespace serviceFram
     public partial class MainWindow : Window
     {
         private static byte[] result = new byte[1024];
-        int port = 49320;
+        int port;
         const string host = "10.141.131.84";
         private Socket serviceSocket;
         private Socket client;
@@ -36,12 +36,10 @@ namespace serviceFram
 
         public MainWindow()
         {
-            thread = new Thread(mainfun);
+         
             InitializeComponent();
-
-
-
-
+            port = Convert.ToUInt16(Port_text.Text);
+         //   thread = new Thread(new ParameterizedThreadStart(mainfun(recive,send,statues)));
         }
 
         private  void start_btn_Click(object sender, RoutedEventArgs e)
@@ -49,9 +47,9 @@ namespace serviceFram
             thread.Start();
         }
 
-        private void mainfun( )
+        private void mainfun(Label recive,Label send,TextBlock statues )
         {
-            port = Convert.ToUInt16(Port_text.Text);
+           
             IPAddress ip = IPAddress.Parse(host);
             IPEndPoint ipe = new IPEndPoint(ip, port);
             serviceSocket = new Socket(AddressFamily.InterNetwork, SocketType.Stream, ProtocolType.Tcp); //ji
@@ -65,7 +63,7 @@ namespace serviceFram
 
                 try
                 {
-                    SocketAsyncEventArgs e = new SocketAsyncEventArgs();
+                   
                     client =  serviceSocket.Accept();
                     //client = e.AcceptSocket;
                   //  Console.WriteLine("与客户建立连接");
@@ -88,13 +86,20 @@ namespace serviceFram
                     client.Send(reb);
                     client.Close();
 
+                    
+
                 }
                 catch
                 {
-                    statues.Text = "未知错误";
+                   // statues.Text = "未知错误";
                 }
             }
         }
 
+
+        private void mainThread()
+        {
+
+        }
     }
 }

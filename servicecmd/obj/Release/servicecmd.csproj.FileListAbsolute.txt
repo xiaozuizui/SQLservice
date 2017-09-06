@@ -1,0 +1,11 @@
+G:\servicehub\SQLservice\servicecmd\bin\Release\servicecmd.exe.config
+G:\servicehub\SQLservice\servicecmd\bin\Release\servicecmd.exe
+G:\servicehub\SQLservice\servicecmd\bin\Release\servicecmd.pdb
+G:\servicehub\SQLservice\servicecmd\bin\Release\Newtonsoft.Json.dll
+G:\servicehub\SQLservice\servicecmd\bin\Release\SQLlib.dll
+G:\servicehub\SQLservice\servicecmd\bin\Release\MySql.Data.dll
+G:\servicehub\SQLservice\servicecmd\bin\Release\SQLlib.pdb
+G:\servicehub\SQLservice\servicecmd\bin\Release\Newtonsoft.Json.xml
+G:\servicehub\SQLservice\servicecmd\obj\Release\servicecmd.csprojResolveAssemblyReference.cache
+G:\servicehub\SQLservice\servicecmd\obj\Release\servicecmd.exe
+G:\servicehub\SQLservice\servicecmd\obj\Release\servicecmd.pdb

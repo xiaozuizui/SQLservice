@@ -6,3 +6,12 @@ G:\android-service\SQLlib\SQLlib\bin\Release\Newtonsoft.Json.dll
 G:\android-service\SQLlib\SQLlib\bin\Release\Newtonsoft.Json.xml
 G:\android-service\SQLlib\SQLlib\obj\Release\SQLlib.dll
 G:\android-service\SQLlib\SQLlib\obj\Release\SQLlib.pdb
+G:\servicehub\SQLservice\SQLlib\bin\Release\SQLlib.dll.config
+G:\servicehub\SQLservice\SQLlib\bin\Release\SQLlib.dll
+G:\servicehub\SQLservice\SQLlib\bin\Release\SQLlib.pdb
+G:\servicehub\SQLservice\SQLlib\bin\Release\MySql.Data.dll
+G:\servicehub\SQLservice\SQLlib\bin\Release\Newtonsoft.Json.dll
+G:\servicehub\SQLservice\SQLlib\bin\Release\Newtonsoft.Json.xml
+G:\servicehub\SQLservice\SQLlib\obj\Release\SQLlib.csprojResolveAssemblyReference.cache
+G:\servicehub\SQLservice\SQLlib\obj\Release\SQLlib.dll
+G:\servicehub\SQLservice\SQLlib\obj\Release\SQLlib.pdb
