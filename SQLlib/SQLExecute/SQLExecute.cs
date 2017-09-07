@@ -45,8 +45,8 @@ namespace SQLlib.SQLExecute
             returnbyte = new byte[1];
             if (operation.Judge(OPERATION.UpdateOwnerInfo&operation.Operation))//1
             {
-               
-                returnbyte[0] = 1;
+                return Encoding.UTF8.GetBytes("1");
+                //returnbyte[0] = 1;
                 //Console.WriteLine(ret);
             }
             else if(operation.Judge(OPERATION.GetGuestInfo&operation.Operation))//2
@@ -62,7 +62,8 @@ namespace SQLlib.SQLExecute
             }
             else if(operation.Judge(OPERATION.GetGuestInfoByTip&operation.Operation))//4
             {
-
+                List<Student> returnstu = ob as List<Student>;
+                return Encoding.UTF8.GetBytes(JsonConvert.SerializeObject(returnstu));
             }
 
 

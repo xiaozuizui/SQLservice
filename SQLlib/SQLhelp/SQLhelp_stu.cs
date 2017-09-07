@@ -38,7 +38,6 @@ namespace SQLlib.SQLhelp
 
         }
 
-       
 
 
         public void GetGuestInfo(out Student stu, out RETUEN ret)
@@ -276,16 +275,53 @@ namespace SQLlib.SQLhelp
             //return Encoding.UTF8.GetBytes(JsonConvert.SerializeObject(returnpro));
         }
 
-
         //待定
-        public void GetGuestInfoByTip()
+        public void GetGuestInfoByTip(out List<Student> reStu,out RETUEN ret)
         {
+            reStu = new List<Student>();
+            string Query_str = "SELECT userId FROM tips WHERE content =" + student.tips.ToString()+ "'";
+            try
+            {
+                MySqlCommand selectUserIdcmd = new MySqlCommand(Query_str, SQL_Connection);
+                string userId =  selectUserIdcmd.ExecuteScalar().ToString();
+                Tips tip = new Tips();
+                tip.userID = userId;
+                foreach (string id in tip.GetUsers())
+                {
+                    string query = "SELECT id,name,grade,majoy,qqnumber,tel,label FROM student WHERE id='" + userId + "'";
 
-            List<Student> returnList = new List<Student>();
-            
+                    MySqlCommand Query_cmd = new MySqlCommand(query, SQL_Connection);
+
+                    MySqlDataReader Query_DataReader = Query_cmd.ExecuteReader();
+
+                    Student stu = new Student();
+                    Query_DataReader.Read();
+                    if (Query_DataReader.HasRows)
+                    {
+                        stu.stuId = (string)Query_DataReader[0];
+                        stu.name = (string)Query_DataReader[1];
+                        stu.grade = (string)Query_DataReader[2];
+                        stu.major = (string)Query_DataReader[3];
+                        stu.qqNum = (string)Query_DataReader[4];
+                        stu.telNum = (string)Query_DataReader[5];
+                        stu.tips = (LABEL)Query_DataReader[6];
+                    }
+                    else
+                    {
+                        stu = null;
+                    }
+                    reStu.Add(stu);
+                }
+                ret = RETUEN.Query_HasRow;
+
+            }
+            catch
+            {
+                ret = RETUEN.Query_NoRow;
+            }
+            //List<Student> returnList = new List<Student>();
+
             //testcontent
-
-            string Query_str = "SELECT grade,majoy,qqnumber,tel,label FROM student WHERE label =";
         }
 
         List<LABEL> GetTips()

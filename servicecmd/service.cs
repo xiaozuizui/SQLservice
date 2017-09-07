@@ -39,7 +39,7 @@ namespace servicecmd
                     client = serviceSocket.Accept();
                     //client = e.AcceptSocket;
                     Console.WriteLine("与客户建立连接");
-
+                    Console.WriteLine(DateTime.Now);
                     byte[] recvBytes = new byte[1024];
                     int length = client.Receive(recvBytes);
                     string clientStr = Encoding.UTF8.GetString(recvBytes, 0, length);
@@ -47,7 +47,7 @@ namespace servicecmd
                     //信息接受
                     System.Console.WriteLine(clientStr);
 
-                    SQLExecute sql = new SQLExecute(JsonConvert.SerializeObject(clientStr));
+                    SQLExecute sql = new SQLExecute(clientStr);
                     sql.ExecuteEx();
 
                     byte[] reb;
@@ -62,6 +62,7 @@ namespace servicecmd
                 catch
                 {
                     Console.WriteLine("未知错误");
+                    
                 }
             }
         }
