@@ -15,13 +15,13 @@ namespace test
         {
 
             Student teststu = new Student();
-            teststu.stuId = "201585082";
-            teststu.Operation = OPERATION.GetProjectCards;
+           // teststu.stuId = "201585082";
+            teststu.Operation = OPERATION.GetGuestInfoByTip;
             teststu.grade = "2015";
             teststu.name = "嘴嘴";
             teststu.qqNum = "785897146";
             teststu.telNum = "18388481204";
-            teststu.tips = LABEL.CPP | LABEL.CSHARP;
+            teststu.tips = (LABEL)1;
             teststu.major = "计算机";
             
 

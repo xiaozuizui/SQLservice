@@ -62,7 +62,7 @@ namespace SQLlib.SQLExecute
             }
             else if(operation.Judge(OPERATION.GetGuestInfoByTip&operation.Operation))//4
             {
-                List<Student> returnstu = ob as List<Student>;
+                List<string> returnstu = ob as List<string>;
                 return Encoding.UTF8.GetBytes(JsonConvert.SerializeObject(returnstu));
             }
 

@@ -1,0 +1,11 @@
+G:\servicehub\SQLservice\test\bin\Release\test.exe.config
+G:\servicehub\SQLservice\test\bin\Release\test.exe
+G:\servicehub\SQLservice\test\bin\Release\test.pdb
+G:\servicehub\SQLservice\test\bin\Release\Newtonsoft.Json.dll
+G:\servicehub\SQLservice\test\bin\Release\SQLlib.dll
+G:\servicehub\SQLservice\test\bin\Release\MySql.Data.dll
+G:\servicehub\SQLservice\test\bin\Release\SQLlib.pdb
+G:\servicehub\SQLservice\test\bin\Release\Newtonsoft.Json.xml
+G:\servicehub\SQLservice\test\obj\Release\test.csprojResolveAssemblyReference.cache
+G:\servicehub\SQLservice\test\obj\Release\test.exe
+G:\servicehub\SQLservice\test\obj\Release\test.pdb

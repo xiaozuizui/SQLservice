@@ -38,6 +38,8 @@ namespace servicecmd
 
                     client = serviceSocket.Accept();
                     //client = e.AcceptSocket;
+                    Console.WriteLine();
+                    Console.WriteLine();
                     Console.WriteLine("与客户建立连接");
                     Console.WriteLine(DateTime.Now);
                     byte[] recvBytes = new byte[1024];
@@ -55,7 +57,7 @@ namespace servicecmd
 
                     string s = Encoding.UTF8.GetString(reb);
                     Console.WriteLine(s);
-
+                    Console.WriteLine(sql.ret);
                     client.Send(reb);
                     client.Close();
                 }

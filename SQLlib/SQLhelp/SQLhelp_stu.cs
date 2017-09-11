@@ -276,42 +276,49 @@ namespace SQLlib.SQLhelp
         }
 
         //待定
-        public void GetGuestInfoByTip(out List<Student> reStu,out RETUEN ret)
+        public void GetGuestInfoByTip(out List<string> reStu,out RETUEN ret)
         {
-            reStu = new List<Student>();
-            string Query_str = "SELECT userId FROM tips WHERE content =" + student.tips.ToString()+ "'";
+            reStu = new List<string>();
+            string Query_str = "SELECT userId FROM tips WHERE content =" + "'"+ student.tips.ToString()+ "'";
             try
             {
                 MySqlCommand selectUserIdcmd = new MySqlCommand(Query_str, SQL_Connection);
                 string userId =  selectUserIdcmd.ExecuteScalar().ToString();
                 Tips tip = new Tips();
                 tip.userID = userId;
-                foreach (string id in tip.GetUsers())
-                {
-                    string query = "SELECT id,name,grade,majoy,qqnumber,tel,label FROM student WHERE id='" + userId + "'";
+                reStu = tip.GetUsers();
+                //foreach (string id in tip.GetUsers())
+                //{
 
-                    MySqlCommand Query_cmd = new MySqlCommand(query, SQL_Connection);
+                //    Console.WriteLine(student.tips);
+                //    string query = "SELECT id FROM student WHERE id='" + id + "'";
 
-                    MySqlDataReader Query_DataReader = Query_cmd.ExecuteReader();
+                //    MySqlCommand Query_cmd = new MySqlCommand(query, SQL_Connection);
 
-                    Student stu = new Student();
-                    Query_DataReader.Read();
-                    if (Query_DataReader.HasRows)
-                    {
-                        stu.stuId = (string)Query_DataReader[0];
-                        stu.name = (string)Query_DataReader[1];
-                        stu.grade = (string)Query_DataReader[2];
-                        stu.major = (string)Query_DataReader[3];
-                        stu.qqNum = (string)Query_DataReader[4];
-                        stu.telNum = (string)Query_DataReader[5];
-                        stu.tips = (LABEL)Query_DataReader[6];
-                    }
-                    else
-                    {
-                        stu = null;
-                    }
-                    reStu.Add(stu);
-                }
+                //    string uid = Query_cmd.ExecuteScalar().ToString();
+
+                 //   reStu.Add(uid);
+                    //MySqlDataReader Query_DataReader = Query_cmd.ExecuteReader();
+
+                    //Student stu = new Student();
+                    //Query_DataReader.Read();
+                    //if (Query_DataReader.HasRows)
+                    //{
+                    //    stu.stuId = (string)Query_DataReader[0];
+                    //    stu.name = (string)Query_DataReader[1];
+                    //    stu.grade = (string)Query_DataReader[2];
+                    //    stu.major = (string)Query_DataReader[3];
+                    //    stu.qqNum = (string)Query_DataReader[4];
+                    //    stu.telNum = (string)Query_DataReader[5];
+                    //    stu.tips = (LABEL)Query_DataReader[6];
+                    //}
+                    //else
+                    //{
+                    //    stu = null;
+                    //}
+                    //reStu.Add(stu);
+                    //Query_DataReader.Close();
+               // }
                 ret = RETUEN.Query_HasRow;
 
             }

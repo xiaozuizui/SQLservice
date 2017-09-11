@@ -47,7 +47,7 @@ namespace SQLlib.SQLExecute
             }
             else if(operation.Judge(OPERATION.GetGuestInfoByTip&operation.Operation))
             {
-                List<Student> list_stu = new List<Student>();
+                List<string> list_stu = new List<string>();
                 stu_help.GetGuestInfoByTip(out list_stu,out ret);
                 ob = list_stu as object;
             }
