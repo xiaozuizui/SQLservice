@@ -45,6 +45,7 @@
         GetProjectContent = 1 << 4,
         GetGuestInfoByTip = 1 << 5,
 
+        GetClass = 1<<6,
 
         SQL_STU = UpdateOwnerInfo | GetGuestInfo | GetGuestInfoByTip | GetProjectCards,
         SQL_PRO = PublishProject | GetProjectContent,

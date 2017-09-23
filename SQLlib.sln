@@ -13,6 +13,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "sendtest", "sendtest\sendte
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "servicecmd", "servicecmd\servicecmd.csproj", "{90031360-F7B4-4E8A-BDE4-1485F3CA4498}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "getTeach", "getTeach\getTeach.csproj", "{5D4D9A9E-9FEF-4F45-A529-DCD04AD2672F}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -39,6 +41,10 @@ Global
 		{90031360-F7B4-4E8A-BDE4-1485F3CA4498}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{90031360-F7B4-4E8A-BDE4-1485F3CA4498}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{90031360-F7B4-4E8A-BDE4-1485F3CA4498}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5D4D9A9E-9FEF-4F45-A529-DCD04AD2672F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5D4D9A9E-9FEF-4F45-A529-DCD04AD2672F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5D4D9A9E-9FEF-4F45-A529-DCD04AD2672F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5D4D9A9E-9FEF-4F45-A529-DCD04AD2672F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
